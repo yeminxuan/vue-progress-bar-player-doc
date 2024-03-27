@@ -1,7 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
-import sidebar from "./sidebar.js";
-
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
   locales: {
@@ -13,16 +11,16 @@ export default hopeTheme({
           link: "/en/introduction",
         },
         {
-          text: "快速上手",
+          text: "Getting Started",
           link: "/en/get-started",
         },
         {
-          text: "组件",
+          text: "Components",
           collapsible: true,
           prefix: "/en/components/",
           children: [
             {
-              text: "颜色分割进度条",
+              text: "Color Split Progress Bar",
               link: "/en/components/color-split-progress-bar.md",
             },
           ],
@@ -46,29 +44,36 @@ export default hopeTheme({
           prefix: "/zh/components/",
           children: [
             {
-              text: "颜色分割进度条",
-              link: "/zh/components/color-split-progress-bar.md",
+              text: "进度条播放器",
+              link: "/zh/components/progress-bar-player.md",
             },
           ],
         },
       ],
     },
   },
+  repo: "https://gitee.com/yeminxuan/vue3-process-bar-player",
+  // 自定义仓库链接文字。默认从 `repo` 中自动推断为
+  // "GitHub" / "GitLab" / "Gitee" / "Bitbucket" 其中之一，或是 "Source"。
+  repoLabel: "Gitee",
+  // 是否在导航栏内显示仓库链接，默认为 `true`
+  repoDisplay: true,
+  navbarLayout: {
+    start: ["Brand"],
+    center: ["Links"],
+    end: ["Language", "Repo", "Outlook"],
+  },
+  darkmode: 'toggle',
+  editLink: false,
   author: {
     name: "叶敏轩",
     url: "https://gitee.com/yeminxuan",
     email: "mc20000406@163.com",
   },
-  //仓库地址
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
-
   docsDir: "src",
 
   // 导航栏
   navbar,
-
-  // 侧边栏
-  sidebar,
 
   // 页脚
   footer: "默认页脚",
@@ -92,14 +97,14 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     // 你应该自行生成自己的评论服务
-    comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-    },
-
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // },
+    copyCode: {},
     components: {
       components: ["Badge", "VPCard"],
     },

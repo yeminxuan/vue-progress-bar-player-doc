@@ -1,13 +1,13 @@
 ---
 home: true
-title: 家
+title: Home
 actions:
-  - text: 案例
+  - text: example
     link: http://localhost:8888/
     type: secondary
 
-  - text: 文档
-    link: /zh/get-started
+  - text: document
+    link: /en/get-started
     type: primary
 
 features:

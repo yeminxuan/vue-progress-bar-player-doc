@@ -1,6 +1,6 @@
 ---
 home: true
-title: Home
+title: 家
 actions:
   - text: 案例
     link: http://localhost:8888/

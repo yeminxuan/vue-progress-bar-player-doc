@@ -1,3 +1,11 @@
+/*
+ * @Author: 叶敏轩 mc20000406@163.com
+ * @Date: 2024-03-25 17:21:37
+ * @LastEditors: 叶敏轩 mc20000406@163.com
+ * @LastEditTime: 2024-03-27 18:54:30
+ * @FilePath: /testDoc/src/.vuepress/config.ts
+ * @Description: 
+ */
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
