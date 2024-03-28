@@ -2,13 +2,14 @@
  * @Author: 叶敏轩 mc20000406@163.com
  * @Date: 2024-03-25 17:21:37
  * @LastEditors: 叶敏轩 mc20000406@163.com
- * @LastEditTime: 2024-03-27 18:54:30
+ * @LastEditTime: 2024-03-28 16:29:25
  * @FilePath: /testDoc/src/.vuepress/config.ts
- * @Description: 
+ * @Description:
  */
+import { getDirname, path } from "vuepress/utils";
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-
+const __dirname = getDirname(import.meta.url);
 export default defineUserConfig({
   base: "/",
   lang: "zh-CN",
@@ -29,7 +30,10 @@ export default defineUserConfig({
     },
   },
   theme,
-
+  alias: {
+    "@assets": path.resolve(__dirname, "public/assets"),
+    "@style": path.resolve(__dirname, "public/styles"),
+  },
   // 和 PWA 一起启用
   // shouldPrefetch: false,
 });

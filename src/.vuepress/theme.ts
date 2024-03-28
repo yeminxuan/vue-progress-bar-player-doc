@@ -121,6 +121,7 @@ export default hopeTheme({
       imgSize: true,
       include: true,
       mark: true,
+      vuePlayground: true,
       stylize: [
         {
           matcher: "Recommended",

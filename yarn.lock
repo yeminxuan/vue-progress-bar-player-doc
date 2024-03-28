@@ -683,6 +683,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@popperjs/core@npm:^2.9.0":
+  version: 2.11.8
+  resolution: "@popperjs/core@npm:2.11.8"
+  checksum: 10c0/4681e682abc006d25eb380d0cf3efc7557043f53b6aea7a5057d0d1e7df849a00e281cd8ea79c902a35a414d7919621fc2ba293ecec05f413598e0b23d5a1e63
+  languageName: node
+  linkType: hard
+
 "@rollup/rollup-android-arm-eabi@npm:4.13.1":
   version: 4.13.1
   resolution: "@rollup/rollup-android-arm-eabi@npm:4.13.1"
@@ -996,6 +1003,13 @@ __metadata:
   dependencies:
     "@vue/shared": "npm:3.4.21"
   checksum: 10c0/9296ba12dc87bed7c056801a8cbff215ff4245404078186188f3c549a075f159acc7eeaf876a949450d22fc1c99a5b9f1818b4c0f828feaaf25273476ff4244b
+  languageName: node
+  linkType: hard
+
+"@vue/repl@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "@vue/repl@npm:4.1.1"
+  checksum: 10c0/929732d37e12b5f39a7c3442fbc3e7da58a935fc41d74509b3b66c42166e77cd3e4befb7740ae88f8436dab06be746b7a89eec48abf3e07258cac98d294635a0
   languageName: node
   linkType: hard
 
@@ -2857,6 +2871,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"moment@npm:^2.30.1":
+  version: 2.30.1
+  resolution: "moment@npm:2.30.1"
+  checksum: 10c0/865e4279418c6de666fca7786607705fd0189d8a7b7624e2e56be99290ac846f90878a6f602e34b4e0455c549b85385b1baf9966845962b313699e7cb847543a
+  languageName: node
+  linkType: hard
+
 "ms@npm:2.1.2":
   version: 2.1.2
   resolution: "ms@npm:2.1.2"
@@ -3555,6 +3576,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tippy.js@npm:^6.3.7":
+  version: 6.3.7
+  resolution: "tippy.js@npm:6.3.7"
+  dependencies:
+    "@popperjs/core": "npm:^2.9.0"
+  checksum: 10c0/ec3677beb8caec791ee1f715663f28f42d60e0f7250074a047d13d5e6db95fdb6d26d8a3ac16cecb4ebcaf33ae919dbc889cf97948d115e8d3c81518c911b379
+  languageName: node
+  linkType: hard
+
 "to-fast-properties@npm:^2.0.0":
   version: 2.0.0
   resolution: "to-fast-properties@npm:2.0.0"
@@ -3638,6 +3668,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vite-plugin-css-injected-by-js@npm:^3.5.0":
+  version: 3.5.0
+  resolution: "vite-plugin-css-injected-by-js@npm:3.5.0"
+  peerDependencies:
+    vite: ">2.0.0-0"
+  checksum: 10c0/5a2423396ae78cc3441d1f87fb255b101a5ba6ee847f0a3d9f407ca260b1fa050c6d8def88372f01607356ef8cae9459fd84386bd39cf09c249dde05ad09b54a
+  languageName: node
+  linkType: hard
+
 "vite@npm:~5.1.3":
   version: 5.1.7
   resolution: "vite@npm:5.1.7"
@@ -3694,7 +3733,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-router@npm:^4.2.5":
+"vue-progress-bar-player@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "vue-progress-bar-player@npm:0.0.2"
+  dependencies:
+    "@vueuse/core": "npm:^10.9.0"
+    moment: "npm:^2.30.1"
+    tippy.js: "npm:^6.3.7"
+    vite-plugin-css-injected-by-js: "npm:^3.5.0"
+    vue: "npm:^3.4.19"
+    vue-router: "npm:4"
+  checksum: 10c0/a860efc78f72f56e749a8b5b6994926c2e0fd17af6863c8816a0ce6034ca8fc880017fcf63eb0dae073fd15efd1c2c35fe2b77bc8285a4d8150680bba4ad0bbf
+  languageName: node
+  linkType: hard
+
+"vue-router@npm:4, vue-router@npm:^4.2.5":
   version: 4.3.0
   resolution: "vue-router@npm:4.3.0"
   dependencies:
@@ -3890,9 +3943,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vuepress-theme-hope-template@workspace:."
   dependencies:
+    "@vue/repl": "npm:^4.1.1"
     "@vuepress/bundler-vite": "npm:2.0.0-rc.8"
     markdown-it: "npm:^14.1.0"
     vue: "npm:^3.4.16"
+    vue-progress-bar-player: "npm:^0.0.2"
     vuepress: "npm:2.0.0-rc.8"
     vuepress-theme-hope: "npm:2.0.0-rc.31"
   languageName: unknown
