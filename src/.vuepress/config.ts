@@ -2,7 +2,7 @@
  * @Author: 叶敏轩 mc20000406@163.com
  * @Date: 2024-03-25 17:21:37
  * @LastEditors: 叶敏轩 mc20000406@163.com
- * @LastEditTime: 2024-04-08 18:28:30
+ * @LastEditTime: 2024-04-08 19:15:44
  * @FilePath: /testDoc/src/.vuepress/config.ts
  * @Description:
  */
@@ -13,16 +13,16 @@ const __dirname = getDirname(import.meta.url);
 export default defineUserConfig({
   head: [['link', { rel: 'icon', href: '/vue-progress-bar-player-doc/favicon.ico' }]],
   base: "/vue-progress-bar-player-doc/",
-  lang: "zh-CN",
-  title: "文档演示",
-  description: "进度播放器的文档演示",
+  lang: "en-US",
+  title: "Vue Progress-Bar-Player",
+  description: "A smooth, easy-to-use, full-featured Vue3 progress bar component",
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     "/en/": {
       lang: "en-US",
-      title: "Vue3 Progress-Bar-Player",
-      description: "Vue3 Progress-Bar-Player",
+      title: "Vue Progress-Bar-Player",
+      description: "A smooth, easy-to-use, full-featured Vue3 progress bar component",
     },
     "/zh/": {
       lang: "zh-CN",
