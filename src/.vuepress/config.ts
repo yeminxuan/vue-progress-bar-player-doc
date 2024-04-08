@@ -2,7 +2,7 @@
  * @Author: 叶敏轩 mc20000406@163.com
  * @Date: 2024-03-25 17:21:37
  * @LastEditors: 叶敏轩 mc20000406@163.com
- * @LastEditTime: 2024-03-30 15:36:01
+ * @LastEditTime: 2024-04-08 17:10:42
  * @FilePath: /testDoc/src/.vuepress/config.ts
  * @Description:
  */
@@ -11,7 +11,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 const __dirname = getDirname(import.meta.url);
 export default defineUserConfig({
-  base: "/",
+  base: "/vue-progress-bar-player-doc/",
   lang: "zh-CN",
   title: "文档演示",
   description: "进度播放器的文档演示",
