@@ -1,12 +1,13 @@
 ---
-lang: zh-CN
-title: 进度条播放器
+lang: en-US
+title: Progress Bar Player
 description:
 ---
 
-## 基础示例
+## Basic
 
-基础进度条播放，根据设定时间平滑改变进度条宽度实现进度播放
+Basic progress bar playback, according to the set time smoothly change the progress bar width to achieve progress playback.
+
 ::: vue-playground
 
 @file App.vue
@@ -5209,9 +5210,10 @@ export { splitProgressData };
 
 :::
 
-## 显示进度百分比
+## Display percentage progress
 
-有时我们想要将当前百分比显示在进度条上，可以通过[progressTextPosition](#progressTextPosition)属性设置：
+Sometimes we want to display the current percentage on the progress bar, which can be set by the [progressTextPosition](#progressTextPosition) property:
+
 ::: vue-playground
 
 @file App.vue
@@ -10514,9 +10516,9 @@ export { splitProgressData };
 
 :::
 
-## 颜色分割
+## Colors split
 
-根据数据中的单个字段（数值）设定区间分割进度条的颜色，支持分别以两种颜色绘制填充色和背景预览色
+The color of the interval split progress bar is set according to a single field (value) in the data, and the fill color and background preview color are drawn in two colors respectively
 
 ::: vue-playground
 
@@ -15729,11 +15731,11 @@ export { splitProgressData };
 
 :::
 
-## 分割颜色 & 实时提示框 <Badge text="beta" type="info" vertical="middle" />
+## Split color & tooltip <Badge text="beta" type="info" vertical="middle" />
 
-分割颜色与实时提示框，在进度条上添加一个提示框，
+Split the color with the real-time prompt box, add a prompt box on the progress bar.
 
-由于提示框内容数据改变时，会导致提示框宽度发生变化 => 提示框的定位会偏移，目前不太完善，后续优化。
+When the content data of the prompt box is changed, the width of the prompt box will change => The positioning of the prompt box will be offset, which is not perfect at present.
 
 ::: vue-playground
 
@@ -20966,9 +20968,10 @@ export { splitProgressData };
 
 :::
 
-## 高性能模式
+## High performance mode
 
-由于分割颜色进度条在改变进度时会导致浏览器重绘，故增加了高性能模式的方法，但这种方式 `牺牲` 了背景预览色可以自定义的功能，使用 `遮罩` 替代了 **背景预览色**
+Because the split color progress bar will cause the browser to redraw when changing the progress, the method of high-performance mode is added, but this method 'sacrifices' the function of background preview color can be customized, and uses' mask' instead of **background preview color**
+
 ::: vue-playground
 
 @file App.vue
@@ -26205,60 +26208,60 @@ export { splitProgressData };
 
 ### Props
 
-| 属性名                | 必填 | 说明                                           | 类型                        | 默认值                                        |
-| --------------------- | ---- | ---------------------------------------------- | --------------------------- | --------------------------------------------- |
-| data                  | 是   | 数据                                           | `any[]`                     | []                                            |
-| duration              | 否   | 动画移动到下个点的过渡时间                     | `number`                    | 1000                                          |
-| performance           | 否   | 开启高性能模式                                 | boolean                     | false                                         |
-| has-real-time-tip-box | 否   | 是否显示实时提示框                             | `boolean`                   | false                                         |
-| progress-bac-color    | 否   | 未开启颜色分割时进度条背景色                   | `string`                    | "#ccc"                                        |
-| progress-fill-color   | 否   | 未开启颜色分割时进度条填充色                   | `string`                    | "#409eff"                                     |
-| is-split              | 否   | 是否开启颜色分割进度条                         | `boolean`                   | false                                         |
-| split-config          | 否   | 分割配置，见下表                               | [SplitConfig](#SplitConfig) | ——                                            |
-| split-fields-interval | 否   | 分割字段区间范围`eg: "[0,10)" =>  10 < a >= 0` | string                      | ""                                            |
-| progressTextPosition  | 否   | 进度百分比文字                                 | null                        | [ProgressTextPosition](#ProgressTextPosition) |
+| Field                 | Required | Description                                                             | Type                                          | Default   |
+| --------------------- | -------- | ----------------------------------------------------------------------- | --------------------------------------------- | --------- |
+| data                  | true     | data                                                                    | `Array`                                       | []        |
+| duration              | false    | the transition time for the animation to move to the next point         | `number`                                      | 1000      |
+| performance           | false    | enabling High Performance Mode,Applies to split color progress bar only | boolean                                       | false     |
+| has-real-time-tip-box | false    | display tooltip                                                         | `boolean`                                     | false     |
+| progress-bac-color    | false    | Progress bar background color when color splitting is not enabled       | `string`                                      | "#ccc"    |
+| progress-fill-color   | false    | progress bar fills color when color splitting is not enabled            | `string`                                      | "#409eff" |
+| is-split              | false    | open the color split progress bar                                       | `boolean`                                     | false     |
+| split-config          | false    | split the progress bar configuration                                    | [SplitConfig](#SplitConfig)                   | ——        |
+| split-fields-interval | false    | division interval range`eg: "[0,10)" =>  10 < a >= 0`                   | `string`                                      | ""        |
+| progressTextPosition  | false    | displays progress percentage text                                       | [ProgressTextPosition](#ProgressTextPosition) | null      |
 
 ### Events
 
-| 事件名        | 描述说明                                               | 类型       |
-| ------------- | ------------------------------------------------------ | ---------- |
-| handle-play   | 动画播放时根据设置的过渡时间定时返回当前点的索引和数据 | `Function` |
-| skip-progress | 返回鼠标点击进度条时当前点的索引和数据                 | `Function` |
+| Event         | Description                                                                                                                      | Type       |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| handle-play   | When the animation plays, the index and data of the current point are returned periodically according to the set transition time | `Function` |
+| skip-progress | Returns the index and data for the current point when the mouse clicks on the progress bar                                       | `Function` |
 
 ### Slots
 
-| 插槽名     | 说明                         | 插槽道具                                                                       |
-| ---------- | ---------------------------- | ------------------------------------------------------------------------------ |
-| controlBtn | 控制按钮（播放、暂停、重播） | `play`：播放按钮显示状态, `pause`：暂停按钮显示状态`refresh`：重播按钮显示状态 |
-| currentTip | 实时提示框内容               | ——                                                                             |
+| Slot Name  | Type                                               | Description                           |
+| ---------- | -------------------------------------------------- | ------------------------------------- |
+| controlBtn | `{ play: boolean, pause:boolean, replay:boolean }` | control buttons (Play, pause, replay) |
+| currentTip | `{}`                                               | tooltip content                       |
 
 ### Exposes
 
-| 方法            | 描述         | 类型       |
-| --------------- | ------------ | ---------- |
-| initProgressBar | 初始化进度条 | `Function` |
-| play            | 播放         | `Function` |
-| pause           | 暂停         | `Function` |
-| refresh         | 重播         | `Function` |
+| Event           | Description                           | Type       |
+| --------------- | ------------------------------------- | ---------- |
+| initProgressBar | init the progress bar player          | `Function` |
+| play            | control progress bar player to play   | `Function` |
+| pause           | control progress bar player to pause  | `Function` |
+| refresh         | control progress bar player to replay | `Function` |
 
 ## Types
 
 ### <div id="SplitConfig">SplitConfig</div>
 
-| 属性名           | 说明                           | 类型     | 默认值              |
-| ---------------- | ------------------------------ | -------- | ------------------- |
-| splitFields      | 用于分割颜色的属性             | `string` | ——                  |
-| inRangeColor     | 处于设置区间内的进度条填充颜色 | `string` | "blue"              |
-| outRangeColor    | 不在设置区间内的进度条填充颜色 | `string` | "red"               |
-| outRangeBacColor | 不在设置区间内的进度条背景颜色 | `string` | "rgba(255,0,0,0.3)" |
-| inRangeBacColor  | 处于设置区间内的进度条背景颜色 | `string` | "rgba(0,0,255,0.3)" |
+| 属性名           | Description                                                              | Type     | Default             |
+| ---------------- | ------------------------------------------------------------------------ | -------- | ------------------- |
+| splitFields      | a field used to split colors                                             | `string` | ""                  |
+| inRangeColor     | the progress bar within the set interval is filled with color            | `string` | "blue"              |
+| outRangeColor    | progress bars that are not within the set interval are filled with color | `string` | "red"               |
+| outRangeBacColor | progress bar background color that is not within the set interval        | `string` | "rgba(255,0,0,0.3)" |
+| inRangeBacColor  | the progress bar background color within the set interval                | `string` | "rgba(0,0,255,0.3)" |
 
 ### <div id="ProgressTextPosition">ProgressTextPosition</div>
 
-| 属性名        | 说明                     | 类型     |
-| ------------- | ------------------------ | -------- |
-| null          | 不显示进度百分比文字     | `string` |
-| follow        | 跟随在当前进度左侧       | `string` |
-| inside-left   | 固定在进度条内部的最左侧 | `string` |
-| inside-right  | 固定在进度条内部的最右侧 | `string` |
-| outside-right | 固定在进度条外部的右侧   | `string` |
+| Field         | Description                                    | Type     |
+| ------------- | ---------------------------------------------- | -------- |
+| null          | not display progress percentage text           | `null`   |
+| follow        | followed to the left of the current progress   | `string` |
+| inside-left   | fixed to the far left inside the progress bar  | `string` |
+| inside-right  | fixed to the far right inside the progress bar | `string` |
+| outside-right | fixed to the right outside the progress bar    | `string` |

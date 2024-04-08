@@ -3,7 +3,7 @@ lang: zh-CN
 title: 快速上手
 description: 
 ---
-本节将介绍如何在项目中使用 vue-progress-bar。
+本节将介绍如何在项目中使用 `vue-progress-bar-player`。
 ## 安装
 
 - 包管理器，如[pnpm](https://pnpm.io/zh/)、[yarn](https://classic.yarnpkg.com/en/)、[npm](https://www.npmjs.com/)等。

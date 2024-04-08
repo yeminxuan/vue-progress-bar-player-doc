@@ -1,7 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
   locales: {
     "/en/": {
       selectLanguageName: "English",
@@ -20,8 +19,8 @@ export default hopeTheme({
           prefix: "/en/components/",
           children: [
             {
-              text: "Color Split Progress Bar",
-              link: "/en/components/color-split-progress-bar.md",
+              text: "Progress Bar Player",
+              link: "/en/components/progress-bar-player.md",
             },
           ],
         },
@@ -52,7 +51,7 @@ export default hopeTheme({
       ],
     },
   },
-  repo: "https://gitee.com/yeminxuan/vue3-process-bar-player",
+  repo: "https://github.com/yeminxuan/vue-progress-bar-player",
   // 自定义仓库链接文字。默认从 `repo` 中自动推断为
   // "GitHub" / "GitLab" / "Gitee" / "Bitbucket" 其中之一，或是 "Source"。
   repoLabel: "Gitee",
@@ -63,7 +62,7 @@ export default hopeTheme({
     center: ["Links"],
     end: ["Language", "Repo", "Outlook"],
   },
-  darkmode: 'toggle',
+  darkmode: "toggle",
   editLink: false,
   author: {
     name: "叶敏轩",
@@ -76,7 +75,7 @@ export default hopeTheme({
   navbar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: "",
   displayFooter: true,
 
   // 加密配置
@@ -181,59 +180,59 @@ export default hopeTheme({
 
     // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
     // pwa: {
-    //   favicon: "/favicon.ico",
-    //   cacheHTML: true,
-    //   cachePic: true,
-    //   appendBase: true,
-    //   apple: {
-    //     icon: "/assets/icon/apple-icon-152.png",
-    //     statusBarColor: "black",
-    //   },
-    //   msTile: {
-    //     image: "/assets/icon/ms-icon-144.png",
-    //     color: "#ffffff",
-    //   },
-    //   manifest: {
-    //     icons: [
-    //       {
-    //         src: "/assets/icon/chrome-mask-512.png",
-    //         sizes: "512x512",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-mask-192.png",
-    //         sizes: "192x192",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-512.png",
-    //         sizes: "512x512",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-192.png",
-    //         sizes: "192x192",
-    //         type: "image/png",
-    //       },
-    //     ],
-    //     shortcuts: [
-    //       {
-    //         name: "Demo",
-    //         short_name: "Demo",
-    //         url: "/demo/",
-    //         icons: [
-    //           {
-    //             src: "/assets/icon/guide-maskable.png",
-    //             sizes: "192x192",
-    //             purpose: "maskable",
-    //             type: "image/png",
-    //           },
-    //         ],
-    //       },
-    //     ],
-    //   },
+    //   favicon: "/vue-progress-bar-player/favicon.ico",
+      //   cacheHTML: true,
+      //   cachePic: true,
+      //   appendBase: true,
+      //   apple: {
+      //     icon: "/assets/icon/apple-icon-152.png",
+      //     statusBarColor: "black",
+      //   },
+      //   msTile: {
+      //     image: "/assets/icon/ms-icon-144.png",
+      //     color: "#ffffff",
+      //   },
+      //   manifest: {
+      //     icons: [
+      //       {
+      //         src: "/assets/icon/chrome-mask-512.png",
+      //         sizes: "512x512",
+      //         purpose: "maskable",
+      //         type: "image/png",
+      //       },
+      //       {
+      //         src: "/assets/icon/chrome-mask-192.png",
+      //         sizes: "192x192",
+      //         purpose: "maskable",
+      //         type: "image/png",
+      //       },
+      //       {
+      //         src: "/assets/icon/chrome-512.png",
+      //         sizes: "512x512",
+      //         type: "image/png",
+      //       },
+      //       {
+      //         src: "/assets/icon/chrome-192.png",
+      //         sizes: "192x192",
+      //         type: "image/png",
+      //       },
+      //     ],
+      //     shortcuts: [
+      //       {
+      //         name: "Demo",
+      //         short_name: "Demo",
+      //         url: "/demo/",
+      //         icons: [
+      //           {
+      //             src: "/assets/icon/guide-maskable.png",
+      //             sizes: "192x192",
+      //             purpose: "maskable",
+      //             type: "image/png",
+      //           },
+      //         ],
+      //       },
+      //     ],
+      //   },
     // },
   },
 });
