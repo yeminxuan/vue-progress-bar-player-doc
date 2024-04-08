@@ -2,7 +2,7 @@
  * @Author: 叶敏轩 mc20000406@163.com
  * @Date: 2024-03-25 17:21:37
  * @LastEditors: 叶敏轩 mc20000406@163.com
- * @LastEditTime: 2024-03-28 16:29:25
+ * @LastEditTime: 2024-03-30 15:36:01
  * @FilePath: /testDoc/src/.vuepress/config.ts
  * @Description:
  */
@@ -14,7 +14,7 @@ export default defineUserConfig({
   base: "/",
   lang: "zh-CN",
   title: "文档演示",
-  description: "vuepress-theme-hope 的文档演示",
+  description: "进度播放器的文档演示",
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
