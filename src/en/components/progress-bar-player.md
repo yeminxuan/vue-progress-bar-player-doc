@@ -5203,7 +5203,7 @@ export { splitProgressData };
 ```json
 {
   "imports": {
-    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.19/dist/index.js"
+    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.20/dist/index.js"
   }
 }
 ```
@@ -10509,7 +10509,7 @@ export { splitProgressData };
 ```json
 {
   "imports": {
-    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.19/dist/index.js"
+    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.20/dist/index.js"
   }
 }
 ```
@@ -15724,7 +15724,7 @@ export { splitProgressData };
 ```json
 {
   "imports": {
-    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.19/dist/index.js"
+    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.20/dist/index.js"
   }
 }
 ```
@@ -20960,7 +20960,7 @@ export { splitProgressData };
 ```json
 {
   "imports": {
-    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.19/dist/index.js",
+    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.20/dist/index.js",
     "moment": "https://unpkg.com/moment/dist/moment.js"
   }
 }
@@ -26196,7 +26196,7 @@ export { splitProgressData };
 ```json
 {
   "imports": {
-    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.19/dist/index.js",
+    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.20/dist/index.js",
     "moment": "https://unpkg.com/moment/dist/moment.js"
   }
 }
@@ -26243,6 +26243,12 @@ export { splitProgressData };
 | play            | control progress bar player to play   | `Function` |
 | pause           | control progress bar player to pause  | `Function` |
 | refresh         | control progress bar player to replay | `Function` |
+
+### Methods
+
+| Event           | Description                                                         | Type                                                                                                      |
+| --------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| splitFunMethods | Calculate the result of the cut interval according to the set color | `Function: (data: any,interval: string,field: string,inRangeColor: string,outRangeColor: string) => void` |
 
 ## Types
 

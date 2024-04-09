@@ -5202,7 +5202,7 @@ export { splitProgressData };
 ```json
 {
   "imports": {
-    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.19/dist/index.js"
+    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.20/dist/index.js"
   }
 }
 ```
@@ -10507,7 +10507,7 @@ export { splitProgressData };
 ```json
 {
   "imports": {
-    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.19/dist/index.js"
+    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.20/dist/index.js"
   }
 }
 ```
@@ -15722,7 +15722,7 @@ export { splitProgressData };
 ```json
 {
   "imports": {
-    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.19/dist/index.js"
+    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.20/dist/index.js"
   }
 }
 ```
@@ -20958,7 +20958,7 @@ export { splitProgressData };
 ```json
 {
   "imports": {
-    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.19/dist/index.js",
+    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.20/dist/index.js",
     "moment": "https://unpkg.com/moment/dist/moment.js"
   }
 }
@@ -26193,7 +26193,7 @@ export { splitProgressData };
 ```json
 {
   "imports": {
-    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.19/dist/index.js",
+    "vue-progress-bar-player": "https://unpkg.com/vue-progress-bar-player@0.0.20/dist/index.js",
     "moment": "https://unpkg.com/moment/dist/moment.js"
   }
 }
@@ -26234,12 +26234,18 @@ export { splitProgressData };
 
 ### Exposes
 
-| 方法            | 描述         | 类型       |
+| 方法名          | 描述         | 类型       |
 | --------------- | ------------ | ---------- |
 | initProgressBar | 初始化进度条 | `Function` |
 | play            | 播放         | `Function` |
 | pause           | 暂停         | `Function` |
 | refresh         | 重播         | `Function` |
+
+### Methods
+
+| 方法名          | 描述                         | 类型                                                                                                      |
+| --------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------- |
+| splitFunMethods | 按照设定颜色计算切割区间结果 | `Function: (data: any,interval: string,field: string,inRangeColor: string,outRangeColor: string) => void` |
 
 ## Types
 
