@@ -5212,7 +5212,7 @@ export { splitProgressData };
 
 ## Display percentage progress
 
-Sometimes we want to display the current percentage on the progress bar, which can be set by the [progressTextPosition](#progressTextPosition) property:
+Sometimes we want to display the current percentage on the progress bar, which can be set by the [progressTextPosition](#ProgressTextPosition) property:
 
 ::: vue-playground
 

@@ -5211,7 +5211,7 @@ export { splitProgressData };
 
 ## 显示进度百分比
 
-有时我们想要将当前百分比显示在进度条上，可以通过[progressTextPosition](#progressTextPosition)属性设置：
+有时我们想要将当前百分比显示在进度条上，可以通过[progressTextPosition](#ProgressTextPosition)属性设置：
 ::: vue-playground
 
 @file App.vue
